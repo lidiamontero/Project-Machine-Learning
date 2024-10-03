@@ -87,4 +87,6 @@ print(df.info())
   - Compliment amb la GDRP. L'organització bancària d'on provenen les dades és responsable del compliment de tots els principis de protecció de dades, així com de demostrar aquest compliment.
 
 
-## 6. Enllaç al github: 
+## 6. Enllaç al github
+
+https://github.com/lidiamontero/Project-Machine-Learning/blob/main/Sprint4-T4-2.md
