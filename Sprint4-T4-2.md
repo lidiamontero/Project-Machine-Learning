@@ -6,7 +6,7 @@
 - Base de dades bank_dataset al GitHub de la ITACADEMY al directori projecteML (https://github.com/ITACADEMYprojectes/projecteML/blob/main/bank_dataset.CSV)
 
 **Descripció de les Fonts:**
-- Les dades bank dataset contenen característiques i la variable target que identifica si el resultat de la trucada és o no és exitós. Són dades de campanyes telefòniques, amb trucades repetides a la mateixa persona, però no es pot identificar l’individu
+- Les dades bank dataset contenen característiques de l'individu i la variable target que identifica si el resultat de la campanya és o no és exitós. Són dades d'una campanya telefònica, amb trucades repetides a la mateixa persona, però no es pot identificar l’individu. Es recull el nombre de trucades total i la durada de la darrera trucada. Hi ha indicació dels temps des del contacte en una campanya anterior i del resultat de la campanya anterior.
   
 ## 2. Mètodes de recol·lecció de dades
 
@@ -14,7 +14,7 @@
 - Dades en format CSV, emmagatzemada en el repositori de GitHub d'ITACADEMY. Aquesta tasca la fa el professor responsable del curs.
 
 **Freqüència de Recol·lecció:**
-- Totes les trucades es recullirien a mesura que es van fent les trucades, als estudiants només ens arriba la versió final de les dades a analitzar. 
+- Totes les trucades de la campanya actual es comptabilitzen, als estudiants només ens arriba la versió final de les dades a analitzar amb la durada de la darrera trucada i el resultat en termes de contractació del dipòsit bancari a l'actual campanya. 
   
 **Scripts de Descàrrega:**
 
@@ -68,8 +68,8 @@ print(df.info())
 
 ## 4. Limitacions de les dades
 
-- Diferents Temps d'Actualització: Les dades de les trucades telefòniques a un possible client representen un nombre diferencial segons si el client potencial està disponible o no. Hi ha dades de vàries campanyes i el temps des de la darrera trucada en una campanya anterior i si el resultat és exitós o no pot ser important en el resultat de contractació del producte financer en una campanya posterior.
-- El significat d'algunes característiques és desconegut i ni de lluny puc descobrir-lo.
+- Diferents Temps d'Actualització: El nombre de trucades telefòniques a un possible client representen un nombre diferencial segons si el client potencial està disponible o no. Hi ha dades d'una campanya actual i el temps des de la darrera trucada en una campanya anterior i si el resultat va ser exitós o no, aquestes darreres variables poden ser importants en el resultat de contractació del producte financer en una campanya posterior. No es disposa de les dades de durada de totes les trucades de la campanya actual, ni del moment del dia o dia de la setmana en que es van realitzar (seria útil per determinar la franja millor per fer la trucada), només de la darrera.
+- El significat d'algunes característiques és desconegut i ni de lluny puc descobrir-lo sense emprar l'URL on trobar les metadades (https://archive.ics.uci.edu/dataset/222/bank+marketing).
 
 ## 5. Consideracions sobre Dades Sensibles
 
@@ -80,9 +80,9 @@ print(df.info())
 
 **Mesures de Protecció:**
 - **Anonimització i Pseudonimització:**
-  - No cal aplicar cap hash per cap camp ni substitució per codis.
+  - No cal aplicar cap hash per cap camp ni substitució per codis. Els autors han triat la supressió de les característiques d'identificació (telèfons, adreces, etc.)
 - **Accés Restringit:**
-  - Accés a dades sensibles restringit als estudiants del curs. Si fossin dades d'un projecte real, l'accés a dades sensibles seria restringit només a personal autoritzat amb necessitat de conèixer aquestes dades per a fins específics del projecte.
+  - Accés a dades sensibles no està restringit als estudiants del curs. Si fossin dades d'un projecte real, l'accés a dades sensibles seria restringit només a personal autoritzat amb necessitat de conèixer aquestes dades per a fins específics del projecte.
 - **Compliment de Regulacions:**
   - Compliment amb la GDRP. L'organització bancària d'on provenen les dades és responsable del compliment de tots els principis de protecció de dades, així com de demostrar aquest compliment.
 
