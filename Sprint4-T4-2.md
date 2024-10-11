@@ -58,9 +58,9 @@ print(df.info())
 ## 3. Format i Estructura de les Dades
 
 **Tipus de Dades:**
-- Numèriques: `day`, `month`, `duration`, `campaign`, `pdays` i `previous`
+- Numèriques: `day`, `month`, `duration`,`balance`, `campaign`, `pdays` i `previous`
 
-- Categòriques: `job`, `marital`, `education`, `default`, `balance`, `housing`, `loan`, `contact`, `poutcome` i `deposit`
+- Categòriques: `job`, `marital`, `education`, `default`,  `housing`, `loan`, `contact`, `poutcome` i `deposit`
 
 **Format d'Emmagatzematge:**
 
