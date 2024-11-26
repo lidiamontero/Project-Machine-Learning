@@ -46,7 +46,7 @@ user_data = pd.DataFrame({
     'dloan' : [dloan],
     'dgmarital': [dgmarital],
     'dgmonth' : [dgmonth],
-    'dcontactcel' : 
+    'dcontactcel' : [dcontactcel],
     'dcontacttel': [dcontacttel]
 })
 
